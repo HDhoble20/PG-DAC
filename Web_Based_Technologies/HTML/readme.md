@@ -9,3 +9,6 @@
 ## Task3: Table : display three table as shown in diagrame.
 #### solutions of this Question iN FileName TaskTable.html
 # _______________________________________________________________________
+## Task4: insert 5 images in webpage and when you click on image it must redirect you to its description page.
+#### solutions of this Question iN FileName TopSection.html
+# _______________________________________________________________________
