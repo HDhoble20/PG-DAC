@@ -1,0 +1,82 @@
+.logo {
+
+    border: 5px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 10px 3px 10px black;
+    margin: 10px;
+    transition: transform 2s;
+}
+.logo:hover{
+    transform: rotateY(340deg);
+}
+
+#d1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: black;
+    background-color: aqua;
+    text-shadow: 6px 7px 5px black;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+.webHeader {
+    background-color:black;  
+    color: antiquewhite;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.block1 {
+    border: 3px solid black;
+    background-color: rgb(178, 243, 245);
+    width: 20%;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1200px) {
+    .block1 {
+        background-color: rgb(31, 181, 131);
+    }
+}
+.webHeader{
+    flex-direction: column;
+}
+
+@media screen and (max-width:992px) {
+    .block1 {
+        width: 33.33%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .block1 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .block1 {
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .block1 {
+        width: 100%;
+    }
+}
+body{
+    background-color: black;
+}
