@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.default function
+        function greeting() {
+            return "good morning students<br>";
+        }
+
+        document.write(greeting());
+        document.write(greeting());
+        document.write(greeting());
+
+
+        //2.parameterized function
+        function welcome(name1, name2, name3) {
+            // return "welcome"+name1+name2+name3+"<br>";
+            return `welcome  ${name1} ${name2} ${name3} <br>`;
+        }
+        document.write(welcome("suraj", "tejas", "Abhi"));
+
+
+
+        //3.anonymous function
+        //function with no name
+        //    let add= function(num1,num2)
+        //     {
+        //         //return num1+num2;
+        //         return `addition of ${num1} + ${num2} = ${num1+num2}`;
+        //     }
+        //     document.write(add(100,300));
+
+
+
+        //4.arrow function 
+        //function which has no name and no function keyword.
+        let sub = (num1, num2) => {
+            return `Subtraction of ${num1}+${num2}=${num1 + num2}<br>`;
+
+        }
+        document.write(sub(200, 100));
+        //optimised code to write function
+        let sub1 = (num1, num2) => `Subtraction of ${num1}+${num2}=${num1 + num2}<br>`;
+        document.write(sub1(400, 200));
+
+
+
+        //5.optional parameterized function: in this function no need to pass parameter value,
+        //optional parameter always at last place
+
+        let fullname = (fname, lname, mname = "") => {
+            return fname + mname + lname;
+        }
+        document.write(fullname("abc", "def", "<br>"));
+
+
+
+        //6.rest parameter function: when we don't know how many parameters required inside
+        //  function while executing.in this we use spread operator.
+        let studentList=(...std)=>{
+            return std;
+        }
+        document.write(studentList("Suraj","Pawan","Yash"));
+
+    </script>
+</body>
+
+</html>
