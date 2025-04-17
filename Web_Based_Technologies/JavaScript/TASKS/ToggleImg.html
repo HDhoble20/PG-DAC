@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css" />
+  <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="text-center">
+    <img src="../assets/dosa.jpg" id="img1" alt="dosa"><br>
+    <h2 id="namee">DOSA</h2>
+
+    <button type="button" class="btn btn-danger mt-5" onclick="changeImg()">Change Img</button>
+  </div>
+
+  <script>
+    let isDosa = true;
+
+    function changeImg() {
+      let img = document.getElementById("img1");
+      let name = document.getElementById("namee");
+      if (img.src.includes("dosa")) {
+        img.src = "../assets/vadapav.jpg";
+        name.innerHTML = "VADAPAV";
+      } else {
+        img.src = "../assets/dosa.jpg";
+        name.innerHTML = "DOSA";
+      }
+  
+    }
+  </script>
+</body>
+</html>
