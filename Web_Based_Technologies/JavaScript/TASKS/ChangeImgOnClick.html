@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css" />
+  <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="text-center">
+    <img src="../assets/dosa.jpg" id="img1" alt="dosa"><br>
+    <h2 id="namee">DOSA</h2>
+
+    <button type="button" class="btn btn-danger mt-5" id="name1" onclick="vadapav()">VADAPAV</button>
+    <button type="button" class="btn btn-danger mt-5" onclick="dosa()">DOSA</button>
+    <button type="button" class="btn btn-danger mt-5" onclick="samosa()">SAMOSA</button>
+    
+  </div>
+
+  <script>
+
+    function vadapav() {
+       document.getElementById("img1"). src="../assets/vadapav.jpg"   
+       document.getElementById("namee").innerHTML="VADAPAV"; 
+    }
+    function dosa() {
+       document.getElementById("img1"). src="../assets/dosa.jpg"
+       document.getElementById("namee").innerHTML="DOSA";
+    }
+    function samosa() {
+       document.getElementById("img1").src="../assets/samosa.jpg"
+       document.getElementById("namee").innerHTML="SAMOSA";
+    }
+
+  </script>
+</body>
+</html>
