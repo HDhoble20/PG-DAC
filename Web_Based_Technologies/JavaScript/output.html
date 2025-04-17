@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="d1">Himanshu</h1>
+    <h1 id="d2"></h1>
+    <h1 id="d3">Nagpur</h1>
+    <p id="d4"></p>
+    <script>
+        //by using dom assign value  inside an element
+        document.getElementById("d2").innerHTML="Dhoble";
+        document.getElementById("d4").innerHTML="Pune";
+        
+         //by using dom we apply css propertyu
+        document.getElementById("d1").style.color="blue";
+        document.getElementById("d3").style.backgroundColor="red";
+
+        //by using dom we get value from element
+        let data =document.getElementById("d3").innerHTML;
+        console.log(data);
+        
+
+
+        //1 Document.write()
+        document.write("GOOD MORNING ALL<br>");
+        document.write(5+6);
+
+        //2.window.alert()
+        // window.alert("Welcome to the world of CDAC");
+        // window.alert(3*3);
+
+        //3.console.log()
+        console.log("Display out in browser console");
+        console.log(3+3);
+
+        //
+    </script>
+</body>
+</html>
