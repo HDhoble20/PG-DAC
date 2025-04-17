@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        
+    .myForm{
+        border: 5px solid red;
+        background-color: black;
+        padding: 50px;
+        width: 500px;
+        position: relative;
+        left: 400px;
+     
+    }
+    </style>
+   
+</head>
+<body>
+    <div class="container ">
+        <form class="myForm  " >
+            <input type="text" name="num1" id="num1"  class="form-control m-3" placeholder="Enter number 1">
+            <input type="text" name="num1" id="num2" class="form-control m-3" placeholder="Enter number 2">
+            <div class=>
+                <button type="button" onclick="add()" class="btn btn-outline-danger  m-3 ">+Add</button>
+                <button type="button" onclick="sub()" class="btn btn-outline-danger m-3 ">-Sub</button>
+                <button type="button" onclick="mul()" class="btn btn-outline-danger m-3 ">*Mul</button>
+                <button type="button" onclick="div()" class="btn btn-outline-danger m-3 ">/Div</button> 
+            </div>
+            <h2 class="text-danger" id="res"></h2>
+            
+        </form>
+    </div>
+       
+        <script>
+            function add(){
+
+                let no1= document.getElementById("num1").value;
+                let no2= document.getElementById("num2").value;
+                let ADD=parseInt(no1)+parseInt(no2);
+                document.getElementById("res").innerHTML = "ADDITION: "+ADD;
+                            
+            }
+            
+           function sub(){
+                
+                let no1= document.getElementById("num1").value;
+                let no2= document.getElementById("num2").value;
+                let SUB=parseInt(no1)-parseInt(no2);
+                document.getElementById("res").innerHTML = "SUBTRACTION: "+SUB;
+                
+            }
+            function mul(){
+                
+                let no1= document.getElementById("num1").value;
+                let no2= document.getElementById("num2").value;
+                let MUL=parseInt(no1)*parseInt(no2);
+                document.getElementById("res").innerHTML = "MULTIPLICATION: "+MUL;
+            }
+            function div(){
+        
+                let no1= document.getElementById("num1").value;
+                let no2= document.getElementById("num2").value;
+                let DIV=parseInt(no1)/parseInt(no2);
+                document.getElementById("res").innerHTML = "DIVISION: "+DIV;
+            }
+            
+
+
+        </script>
+</body>
+</html>
