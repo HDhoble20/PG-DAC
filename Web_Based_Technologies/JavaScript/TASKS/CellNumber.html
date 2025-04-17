@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .myCls {
+            border: 3px solid black;
+            background-color: rgb(57, 121, 75);
+            width: 500px;
+        }
+
+        .myCell {
+            position: relative;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container myCls">
+        <table class="table table-bordered  >
+            <div class=" grid ">
+                <tr>
+                    <td id=" l1">1</td>
+            <td id="l2">2</td>
+            <td id="l3">3</td>
+            </tr><br>
+            <tr>
+                <td id="l4">4</td>
+                <td id="l5">5</td>
+                <td id="l6">6</td>
+            </tr><br>
+            <tr>
+                <td id="l7">7</td>
+                <td id="l8">8</td>
+                <td id="l9">9</td>
+            </tr>
+
+    </div>
+    </table>
+    <div>
+        <input type=" text" name="num1" id="num1" class="text-center  m-3" placeholder="SELECT CELL NUMBER">
+    </div>
+    <div>
+        SELECT CELL COLOR
+        <input type="color"  id="col1" >
+    </div>
+    <button type="button" onclick="apply()" class="btn btn-outline-dark myCell m-4 ">APPLY</button>
+
+    </div>
+    <script>
+        function apply() {
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("col1").value;
+            switch (parseInt(a)) {
+                case 1:
+                    document.getElementById("l1").style.backgroundColor = b;
+                    break;
+                case 2:
+                    document.getElementById("l2").style.backgroundColor = b;
+                    break;
+                case 3:
+                    document.getElementById("l3").style.backgroundColor = b;
+                    break;
+                case 4:
+                    document.getElementById("l4").style.backgroundColor = b;
+                    break;
+                case 5:
+                    document.getElementById("l5").style.backgroundColor = b;
+                    break;
+                case 6:
+                    document.getElementById("l6").style.backgroundColor = b;
+                    break;
+                case 7:
+                    document.getElementById("l7").style.backgroundColor = b;
+                    break;
+                case 8:
+                    document.getElementById("l8").style.backgroundColor = b;
+                    break;
+                case 9:
+                    document.getElementById("l9").style.backgroundColor = b;
+                    break;
+                
+                default:
+
+                    break;
+            }
+            document.getElementById("l").style.backgroundColor = b;
+        }
+    </script>
+</body>
+
+</html>
