@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d20"></div>
+    <div id="d21"></div>
+    <div id="d22"></div>
+    <script>
+        //how to create object of date class
+        let dateObj=new Date();
+        document.getElementById("d1").innerHTML=dateObj;
+        document.getElementById("d3").innerHTML = dateObj.getFullYear();
+        document.getElementById("d4").innerHTML = dateObj.getHours();
+        document.getElementById("d5").innerHTML = dateObj.getDate();
+        document.getElementById("d6").innerHTML = dateObj.getDay();
+
+        //how to set date and time
+       // let objname= new Date(year,month,date,hour,min,sec);
+        let d=new Date("2015","02","5","10","35","40");
+        document.getElementById("d8").innerHTML= d;
+
+
+
+        function myClock(){
+            let time= new Date();
+            document.getElementById("d9").innerHTML= time.toLocaleTimeString();
+        }
+        //myClock();
+        setInterval(myClock,1000)
+
+
+        let today=dateObj.getDay();
+        switch(today){
+            case 0:{
+                document.getElementById("d6").innerHTML = `today is Sunday`;
+                break;
+            }
+            case 1:{
+                document.getElementById("d6").innerHTML = `today is Monday`;
+                break;
+            }
+            case 2:{
+                document.getElementById("d6").innerHTML = `today is Tuesday`;
+                break;
+            }
+            case 3:{
+                document.getElementById("d6").innerHTML = `today is Wedesday`;
+                break;
+            }
+            case 4:{
+                document.getElementById("d6").innerHTML = `today is Thursday`;
+                break;
+            }
+            case 5:{
+                document.getElementById("d6").innerHTML = `today is Friday`;
+                break;
+            }case 6:
+            {
+                document.getElementById("d6").innerHTML = `today is Saturday`;
+                break;
+            }
+            default:{
+                
+                document.getElementById("d6").innerHTML = `Invalid choice`;
+                break;
+            
+            }
+        }
+
+        // let curMonth=dateObj.getMonth();
+        // switch(curMonth)
+        // {
+        //     case 0:{
+
+        //     }
+        // }
+
+        
+    </script>
+</body>
+</html>
