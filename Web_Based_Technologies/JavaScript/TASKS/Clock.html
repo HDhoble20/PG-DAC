@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css" />
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+   <style>
+   
+body{
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top,rgb(2, 35, 35),rgb(4, 4, 37),rgb(111, 5, 5));
+}
+.box{
+    background-color: black;
+    color: aqua;
+    border: 3px solid aqua;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 500px;
+    box-shadow: 0 0 80px aqua;
+    transition: transform 2s;
+}
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 80px red;
+    color: red;
+
+}
+#d2{
+    
+    position: fixed;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+   </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" class="circle box"></div>
+    <h1 id="d2">__.__.__</h1>
+    <!-- <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div> -->
+    <script>
+        
+        function myClock(){
+            let time= new Date();
+            document.getElementById("d2").innerHTML= time.toLocaleTimeString();
+        }
+        setInterval(myClock,1000)
+    </script>
+</body>
+</html>
