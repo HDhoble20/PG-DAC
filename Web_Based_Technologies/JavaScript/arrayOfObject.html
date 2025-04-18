@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //array of object 
+        // let products=[{name:"Apple",price:200},{name:"Grapes"}]
+        // console.log(products[0].name,products[1].name,products[0].price);
+        let products = [
+            { pid: 101, pname: "Laptop", pprice: 45000, quantity: 23, available: true },
+            { pid: 102, pname: "Mouse", pprice: 2000, quantity: 12, available: false },
+            { pid: 103, pname: "Keyboard", pprice: 3000, quantity: 33, available: true },
+            { pid: 104, pname: "Adaptor", pprice: 1000, quantity: 21, available: false },
+            { pid: 105, pname: "USB", pprice: 100, quantity: 100, available: true },
+        ];
+        for (let p of products) {
+            document.write(`ID:${p.pid} NAME: ${p.pname} PRICE: ${p.pprice} QUANTITY: ${p.quantity} AVAILABLE: ${p.available}<br>`)
+        }
+
+        document.write(`<br>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br><br>`)
+       //display available products only
+        for (let p of products) {
+            if(p.available==true)
+            {
+                document.write(`ID:${p.pid} NAME: ${p.pname} PRICE: ${p.pprice} QUANTITY: ${p.quantity} AVAILABLE: ${p.available}<br>`)
+            }
+          
+        }
+    </script>
+
+</body>
+
+</html>
