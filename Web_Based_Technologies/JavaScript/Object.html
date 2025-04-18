@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let student={
+            id:101,
+            name:"Himanshu",
+            contact:"455454",
+            single:true,
+            address:{
+                city:"Pune",
+                pincode:411041,
+                state:"Maharahstra",
+            },
+            details:function()
+            {
+                return `ID: ${this.id} Name: ${this.name} Contact: ${this.contact} Single: ${this.single}<br>`
+            }
+        };
+        //accessing object data outside the object
+        document.write(`ID: ${student.id} Name: ${student.name} Contact: ${student.contact} Single: ${student.single}<br>`);
+        //accessing object data availabe inside object
+        document.write(` CITY: ${student.address.city} PINCODE: ${student.address.pincode}<br>`);
+        //accessing objecvt data 
+        document.write(student.details());
+
+    </script>
+</body>
+</html>
