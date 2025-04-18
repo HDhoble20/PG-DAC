@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let breakfast=["pohe","idli","vada","dosa","Samosa"];
+        for(let i=0;i<breakfast.length;i++)
+    {
+        document.write(`${breakfast[i]} ,`);
+    }
+    document.write(`<br>*******************************<br>`);
+    //for of: it is use to display array data
+    for(let b of breakfast)
+    {
+        document.write(`${b}<br>`);
+    }
+    document.write(`<br>*******************************<br>`)
+    //for in:to display array index
+    for(let b in breakfast)
+    {
+        document.write(`${b} <br>`);
+    }
+
+    </script>
+</body>
+</html>
