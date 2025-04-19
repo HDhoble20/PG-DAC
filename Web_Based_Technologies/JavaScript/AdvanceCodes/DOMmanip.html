@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="p1">para1</p>
+        <p id="p2">para2</p>
+    </div>
+    <button type="button" onclick="deleteElement()">delete element</button>
+<script>
+   console.log( document.getElementById("parent"));//we can access element
+   let parentElement=document.getElementById("parent");//we can access element
+   let newPara= document.createElement("p");//we create new element
+   newPara.setAttribute("id","p3");//here we set attribute and value
+   newPara.innerHTML="para3";//we set value inside an element
+   parentElement.appendChild(newPara);
+
+   function deleteElement(){
+    document.getElementById("p1").remove();
+   }
+</script>
+</body>
+</html> 
