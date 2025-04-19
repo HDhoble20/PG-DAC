@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click on me, i will disappear</h1>
+    <h2>HOVER OVER ME I WILL DISAPPEAR</h2>
+    <img id="img1" src="../assets/angry.jfif" alt="Angry"><br><br>
+    <button type="button" id="btnhide">Hide</button>&nbsp;&nbsp;
+    <button type="button" id="btnshow">Show</button>
 
+    <script>
+        $(document).ready(function(){
+
+            // img hide and show
+            $("#btnhide").click(()=> {
+                $("#img1").hide(2000);
+            });
+            $("#btnshow").click(()=>{
+                $("#img1").show(2000);
+            });
+
+            //text hide and show 
+            $('h1').click(function(){
+                $(this).hide();
+            });
+            $('h2').hover(function(){
+                $(this).hide();
+            });
+        })
+    </script>
+</body>
+</html>
