@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <h1>JQUERY EFFECTS</h1>
     <img id="img1" src="../assets/angry.jfif" alt="angry"><br><br>
@@ -19,37 +21,60 @@
     <button type="button" id="btn1">FADE IN</button>
     <button type="button" id="btn3">FADE TOGGLE</button>
 
+    <hr>
+    <button type="button" id="btn4">slideUp</button>&nbsp;&nbsp;
+    <button type="button" id="btn5">slideDown</button>&nbsp;&nbsp;
+    <button type="button" id="btn6">slideToggle</button>&nbsp;&nbsp;
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, sit iste! Reiciendis voluptas,
+        laudantium deserunt blanditiis consequuntur suscipit voluptatum ipsam perferendis facilis accusamus illum magni,
+        similique saepe libero, voluptatibus repellendus.</p>
+
     <script>
 
-        $(document).ready(function(){
+        $(document).ready(function () {
+
+
+            //CODE FOR SLIDE EFFECT
+            $("#btn4").click(() => {
+                $("#p1").slideUp(2000);
+            });
+            $("#btn5").click(() => {
+                $("#p1").slideDown(2000);
+            });
+
+            $("#btn6").click(() => {
+                $("#p1").slideToggle(2000);
+            });
+
 
             //FADE OUT FADE IN AND FADE TOGGLE OF IMAGE
-            $("#btn2").click(()=>{
+            $("#btn2").click(() => {
                 $("#img2").fadeOut(2000);
             });
-            $("#btn1").click(()=>{
+            $("#btn1").click(() => {
                 $("#img2").fadeIn(2000);
             });
-            
-            $("#btn3").click(()=>{
+
+            $("#btn3").click(() => {
                 $("#img2").fadeToggle(2000);
             });
-            
-            
- 
 
-            $("#btnhide").click(()=>{
-                $("#img1").hide(2000,()=>{window.alert("Image hide successfully!!!!")});
+
+
+
+            $("#btnhide").click(() => {
+                $("#img1").hide(2000, () => { window.alert("Image hide successfully!!!!") });
 
             });
-            $("#btnshow").click(()=> {
-                $("#img1").show(2000,()=>{window.alert("Image shown successfully!!!!")});
+            $("#btnshow").click(() => {
+                $("#img1").show(2000, () => { window.alert("Image shown successfully!!!!") });
             });
             //it will do both operation with single button
-            $("#btntoggle").click(()=> {
+            $("#btntoggle").click(() => {
                 $("#img1").toggle(2000);
             });
         });
     </script>
 </body>
+
 </html>
