@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JQUERY EFFECTS</h1>
+    <img id="img1" src="../assets/angry.jfif" alt="angry"><br><br>
+    <button type="button" id="btnhide">HIDE</button>
+    <button type="button" id="btnshow">SHOW</button>
+    <button type="button" id="btntoggle">TOGGLE</button>
 
+    <script>
+        $(document).ready(function(){
+            $("#btnhide").click(()=>{
+                $("#img1").hide(2000,()=>{window.alert("Image hide successfully!!!!")});
+
+            });
+            $("#btnshow").click(()=> {
+                $("#img1").show(2000,()=>{window.alert("Image shown successfully!!!!")});
+            });
+            //it will do both operation with single button
+            $("#btntoggle").click(()=> {
+                $("#img1").toggle(2000);
+            });
+        });
+    </script>
+</body>
+</html>
