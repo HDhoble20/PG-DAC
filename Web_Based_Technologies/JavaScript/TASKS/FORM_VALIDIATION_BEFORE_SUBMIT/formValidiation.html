@@ -1,0 +1,22 @@
+<!-- BEFORE SUBMIT FORM VALIDIATION -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../CLASS_TASKS/formValidiation.css">
+   <script src="../CLASS_TASKS/formValidiation.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form class="box" >
+
+        <input type="text" name="uid" id="uid" class="inputbox" onblur="checkUID()" placeholder="Enter User ID">
+       <br> <span id="uidErr"></span><br>
+       <input type="password" name="pass" id="pass" class="inputbox" onblur="checkPass()" placeholder="Enter Password">
+       <br><span id="passErr"></span>
+       <br><button type="submit" onsubmit="checkPass()">Submit</button>
+    </form>
+</body>
+</html>
