@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 4px solid black;
+            border-radius: 40px;
+            width: 240px;
+            padding: 10px;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../assets/angry.jfif" alt="angry">
+        <button type="button" onclick="hideImg('none')">hide Img</button>
+    </div>
+    <script>
+        function hideImg(none){
+            document.getElementById("img1").style.display="none";
+        }
+        hideImg();
+    </script>
+</body>
+</html>
