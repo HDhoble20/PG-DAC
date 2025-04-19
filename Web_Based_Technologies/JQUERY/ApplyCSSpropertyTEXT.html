@@ -8,16 +8,21 @@
 </head>
 <body>
     <h1 id="d1">Himanshu Dhoble</h1>
-
+    <input type="text" id="txt1" name="userData">
 
     <script>
         $(document).ready(function(){
-            $("#d1").mouseenter(function(){
-                $(this).css({"color":"red","background-color":"Black","text-align":"center"});
-            });
-            $("#d1").mouseleave(function(){
-                $(this).css({"color":"blue","background-color":"Black","text-align":"center"});
-            });
+
+            $('#txt1').on({mouseenter:function(){$(this).css({"border":"3px solid red", "color":"red","background-color":"Black","text-align":"center"})},
+                           mouseleave:function(){$(this).css({"border":"3px solid blue","color":"blue","background-color":"Black","text-align":"center"})},
+                           click:function(){}});
+
+            // $("#d1").mouseenter(function(){
+            //     $(this).css({"color":"red","background-color":"Black","text-align":"center"});
+            // });
+            // $("#d1").mouseleave(function(){
+            //     $(this).css({"color":"blue","background-color":"Black","text-align":"center"});
+            // });
         })
     </script>
 </body>
