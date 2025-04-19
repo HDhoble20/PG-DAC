@@ -12,9 +12,15 @@
     <img id="img1" src="../assets/angry.jfif" alt="Angry"><br><br>
     <button type="button" id="btnhide">Hide</button>&nbsp;&nbsp;
     <button type="button" id="btnshow">Show</button>
+    <h3 class="cls1">DOUBLE CLICK ON ME TO HIDE IMAGE</h3>
 
     <script>
         $(document).ready(function(){
+
+            //double click on text to hide image
+            $(".cls1").dblclick(()=>{
+                $("#img1").hide(2000);
+            });
 
             // img hide and show
             $("#btnhide").click(()=> {
