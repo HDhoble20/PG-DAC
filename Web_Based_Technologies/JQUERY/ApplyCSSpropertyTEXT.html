@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1">Himanshu Dhoble</h1>
 
+
+    <script>
+        $(document).ready(function(){
+            $("#d1").mouseenter(function(){
+                $(this).css({"color":"red","background-color":"Black","text-align":"center"});
+            });
+            $("#d1").mouseleave(function(){
+                $(this).css({"color":"blue","background-color":"Black","text-align":"center"});
+            });
+        })
+    </script>
+</body>
+</html>
