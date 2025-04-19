@@ -13,8 +13,31 @@
     <button type="button" id="btnshow">SHOW</button>
     <button type="button" id="btntoggle">TOGGLE</button>
 
+
+    <img id="img2" src="../assets/happy.jfif" alt="happy"><br><br>
+    <button type="button" id="btn2">FADE OUT</button>
+    <button type="button" id="btn1">FADE IN</button>
+    <button type="button" id="btn3">FADE TOGGLE</button>
+
     <script>
+
         $(document).ready(function(){
+
+            //FADE OUT FADE IN AND FADE TOGGLE OF IMAGE
+            $("#btn2").click(()=>{
+                $("#img2").fadeOut(2000);
+            });
+            $("#btn1").click(()=>{
+                $("#img2").fadeIn(2000);
+            });
+            
+            $("#btn3").click(()=>{
+                $("#img2").fadeToggle(2000);
+            });
+            
+            
+ 
+
             $("#btnhide").click(()=>{
                 $("#img1").hide(2000,()=>{window.alert("Image hide successfully!!!!")});
 
@@ -22,7 +45,7 @@
             $("#btnshow").click(()=> {
                 $("#img1").show(2000,()=>{window.alert("Image shown successfully!!!!")});
             });
-            //it will do both operation with single button....
+            //it will do both operation with single button
             $("#btntoggle").click(()=> {
                 $("#img1").toggle(2000);
             });
