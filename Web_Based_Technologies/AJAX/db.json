@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "name": "Lap",
+      "price": "67",
+      "company": "US",
+      "quantity": "3",
+      "id": "101"
+    },
+    {
+      "id": "102",
+      "name": "Adaptor",
+      "price": 1500,
+      "company": "Dell",
+      "quantity": 35
+    },
+    {
+      "id": "c4d3",
+      "name": "TV",
+      "price": "34400",
+      "company": "MI",
+      "quantity": "22"
+    }
+  ],
+  "Employee": [
+    {
+      "id": "1",
+      "name": "Himanshu",
+      "post": "Manager",
+      "salary": 90000,
+      "location": "Pune",
+      "mode": "Online"
+    },
+    {
+      "name": "Pawan",
+      "post": "Developer",
+      "salary": "40000",
+      "location": "Pune",
+      "mode": "hybrid",
+      "id": "7f52"
+    },
+    {
+      "name": "Yash",
+      "post": "Clerk",
+      "salary": "34000",
+      "location": "Shivne",
+      "mode": "offline",
+      "id": "fdf9"
+    },
+    {
+      "id": "8cf0",
+      "name": "Prasad",
+      "post": "Puen",
+      "salary": "20000",
+      "location": "Buldana",
+      "mode": "offline"
+    }
+  ]
+}
