@@ -1,0 +1,53 @@
+21/04/2025
+
+AJAX (Asynchronus javascript and XML)
+
+
+AJAX: -It is not a programming language
+      -Ajax is a technique for accessing web-server from a webpage
+      -Ajax stands for Asynchronus javascript and XML.
+      -Ajax allows us to send and recieve data asynchronusly without reloading a webpage
+       because of this it's work flow is fast.
+
+*Where it is used.
+    -there are too many web applications running on the web so that are on web-server using ajax like gmail,facebook,google,googlemap
+
+*Ajax just uses as combination of  javascript and xml
+    -a browser built in XMLHttRequest object(to make request to server for data  from browser).
+    -to display data we use javaascript and html DOM
+
+    -with AJAX we can update part of a web application without reloading complete webpage.
+
+    -Step to use AJAX in web-application
+
+        step1- Create object of XMLHttRequest.
+                let xmlObj=new XMLHttRequest();
+
+        step2- Write callback method to handle response.
+                xmlObj.onload=function(){
+                    handle response
+                }
+
+        step3- Create a request by using open method.
+                xmlObj.open("request","server-url");
+
+        step4- Send a request to server.
+                xmlObj..send();
+*install json-server
+npm install -g json-server
+
+to run json-file on json-server
+json-server --watch -p 8888 db.json
+
+JSON data:- when we fetch data from web server it comes in json format
+          - in json data is of type text or string.
+          -it will look like javascript object .
+          -to perform manipulation with json data is not possible so we convert
+           json data into javascript object=> JSON.parse();
+          - to convert 
+    
+    *CRUD
+         C(create)-post-request
+         R(read)- get request
+         U(update)- put request
+         D(delete)- delete request
