@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="../AJAX/EmployeeDashboard.js"></script>   -->
+    <title>Document</title>
+    <style>
+        .myBorder {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>EMPLOYEE DASHBOARD</h1>
+        <div class="row">
+            <div class="col-sm-9 myBorder">
+                <table class="table table-bordered  table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>POST</th>
+                            <th>SALARY</th>
+                            <th>LOCATION</th>
+                            <th>MODE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="d2">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-sm-3 myBorder">
+                <label class="form-label">
+                    <strong>Enter product id to delete product</strong>
+                </label>
+                <input type="text" name="pid" id="pid" class="form-control">
+                <button type="button" class="btn btn-outline-danger my-2" onclick="deleteEmployee()">DELETE
+                    EMPLOYEE</button>
+            </div>
+            <div class="col-sm-6 myBorder">
+                <label class="form-label">
+                    <strong>ENTER EMPLOYEE DETAILS TO ADD</strong>
+                </label>
+                <input type="text" name="ename" id="eName" placeholder="Enter Employee Name" class="form-control my-2">
+                <input type="text" name="epost" id="ePost" placeholder="Enter Employee Post" class="form-control my-2">
+                <input type="text" name="esalary" id="eSalary" placeholder="Enter Employee Salary"
+                    class="form-control my-2">
+                <input type="text" name="elocation" id="eLocation" placeholder="Enter Employee Location "
+                    class="form-control my-2">
+
+                <select name="emode" id="eMode" class="form-control">
+                    <option value="">Select Mode</option>
+                    <option value="online">ONLINE</option>
+                    <option value="offline">OFFLINE</option>
+                    <option value="hybrid">HYBRID</option>
+                </select>
+                <br>
+                <button type="button" class="btn btn-outline-success my-2" onclick="addEmployee()">ADD EMPLOYEE</button>
+            </div>
+            <div class="col-sm-6 myBorder">
+                <label class="form-label">
+                    <strong>Enter Employee ID to get Information</strong>
+                </label>
+
+                <input type="text" name="empid" id="empId" placeholder="Enter Employee Id to update data"
+                    class="form-control my-2">
+                <button type="button" class="btn btn-outline-success my-2" onclick="getEmployee()">GET EMPLOYEE
+                    INFO</button>
+                <hr>
+                <strong>Enter EMPLOYEE information to update</strong>
+
+                <input type="text" name="name" id="empName" placeholder="Enter Employee Name" class="form-control my-2">
+                <input type="text" name="post" id="empPost" placeholder="Enter Employee Post" class="form-control my-2">
+                <input type="text" name="salary" id="empSalary" placeholder="Enter Employee Salary"
+                    class="form-control my-2">
+                <input type="text" name="location" id="empLocation" placeholder="Enter Employee Location"
+                    class="form-control my-2">
+                <select name="mode" id="empMode" class="form-control">
+                    <option value="">Select Mode</option>
+                    <option value="online">ONLINE</option>
+                    <option value="offline">OFFLINE</option>
+                    <option value="hybrid">HYBRID</option>
+                </select>
+                <button type="button" class="btn btn-outline-success my-2" onclick="updateEmployee()"> ADD UPDATED
+                    EMPLOYEE</button>
+            </div>
+
+        </div>
+    </div>
+
+<script src="../AJAX/EmployeeDashboard.js"></script>
+</body>
+
+</html>
