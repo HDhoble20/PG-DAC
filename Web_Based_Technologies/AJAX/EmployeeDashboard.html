@@ -9,9 +9,13 @@
     <!-- <script src="../AJAX/EmployeeDashboard.js"></script>   -->
     <title>Document</title>
     <style>
+        body{
+            background: linear-gradient(to top,rgb(15, 211, 211),rgb(113, 113, 227),rgb(240, 26, 26));
+        }
         .myBorder {
             border: 3px solid black;
         }
+    
     </style>
 </head>
 
@@ -42,7 +46,7 @@
                     <strong>Enter product id to delete product</strong>
                 </label>
                 <input type="text" name="pid" id="pid" class="form-control">
-                <button type="button" class="btn btn-outline-danger my-2" onclick="deleteEmployee()">DELETE
+                <button type="button" class="btn btn-danger my-2" onclick="deleteEmployee()">DELETE
                     EMPLOYEE</button>
             </div>
             <div class="col-sm-6 myBorder">
@@ -63,7 +67,7 @@
                     <option value="hybrid">HYBRID</option>
                 </select>
                 <br>
-                <button type="button" class="btn btn-outline-success my-2" onclick="addEmployee()">ADD EMPLOYEE</button>
+                <button type="button" class="btn btn-success my-2" onclick="addEmployee()">ADD EMPLOYEE</button>
             </div>
             <div class="col-sm-6 myBorder">
                 <label class="form-label">
@@ -72,7 +76,7 @@
 
                 <input type="text" name="empid" id="empId" placeholder="Enter Employee Id to update data"
                     class="form-control my-2">
-                <button type="button" class="btn btn-outline-success my-2" onclick="getEmployee()">GET EMPLOYEE
+                <button type="button" class="btn btn-success my-2" onclick="getEmployee()">GET EMPLOYEE
                     INFO</button>
                 <hr>
                 <strong>Enter EMPLOYEE information to update</strong>
@@ -89,7 +93,7 @@
                     <option value="offline">OFFLINE</option>
                     <option value="hybrid">HYBRID</option>
                 </select>
-                <button type="button" class="btn btn-outline-success my-2" onclick="updateEmployee()"> ADD UPDATED
+                <button type="button" class="btn btn-success my-2" onclick="updateEmployee()"> ADD UPDATED
                     EMPLOYEE</button>
             </div>
 
