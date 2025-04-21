@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .myBorder {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product Dashboard</h1>
+        <div class="row">
+            <div class="col-sm-9 myBorder">
+                <table class="table table-bordered  table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Company</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="d1">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-3 myBorder">
+                <label class="form-label">
+                    <strong>Enter product id to delete product</strong> 
+                </label>
+                <input type="text" name="pid" id="pid" class="form-control">
+                <button type="button" class="btn btn-outline-danger my-2" onclick="deleteProduct()">DELETE
+                    Product</button>
+            </div>
+            <div class="col-sm-6 myBorder">
+                <label class="form-label">
+                    <strong>Enter product information to Add</strong> 
+                </label>
+                <input type="text" name="name" id="txtName" placeholder="Enter product Name" class="form-control my-2">
+                <input type="text" name="price" id="txtPrice" placeholder="Enter product Price" class="form-control my-2">
+                <input type="text" name="Company" id="txtCompany" placeholder="Enter product Company" class="form-control my-2">
+                <input type="text" name="Quantity" id="txtQuantity" placeholder="Enter product Quantity" class="form-control my-2">
+                <button type="button" class="btn btn-outline-success my-2" onclick="addProduct()"> ADD Product</button>
+            </div>
+
+            <div class="col-sm-6 myBorder">
+                <label class="form-label">
+                    <strong>Enter product information to update</strong> 
+                </label>
+
+                <input type="text" name="pid" id="prodId" placeholder="Enter product Id to update data" class="form-control my-2">
+                <button type="button" class="btn btn-outline-success my-2" onclick="getSingleProduct()">GET PRODUCT INFO</button>
+                <hr>
+                    <strong>Enter product information to update</strong> 
+            
+                <input type="text" name="name" id="uName" placeholder="Enter product Name" class="form-control my-2">
+                <input type="text" name="price" id="uPrice" placeholder="Enter product Price" class="form-control my-2">
+                <input type="text" name="Company" id="uCompany" placeholder="Enter product Company" class="form-control my-2">
+                <input type="text" name="Quantity" id="uQuantity" placeholder="Enter product Quantity" class="form-control my-2">
+                <button type="button" class="btn btn-outline-success my-2" onclick="updateProduct()"> ADD UPDATED Product</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+    <script src="../AJAX/external.js"></script>  
+</body>
+
+</html>
