@@ -1,0 +1,15 @@
+*{
+    background-color: gray;
+
+}
+.myTitle{
+    color: antiquewhite;
+    background-color: black;
+    text-align: center;
+}
+.para{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    background-color: black;
+}
