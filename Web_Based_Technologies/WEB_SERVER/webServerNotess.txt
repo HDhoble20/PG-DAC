@@ -1,0 +1,37 @@
+23/04/2025
+
+* how to create Web Server
+
+    step1. create package.json file
+    -npm init
+
+    step2. install express js
+    -npm i express
+
+    step3. install dotenv
+    -npm install dotenv --save
+
+    step4. create server and start it.
+
+    step5. create folder structure to store data and static file
+
+        public folder 
+            -images folder
+            -html folder
+            -css folder 
+            -js folder
+    
+    step6.write a code to access static assets and file by using express inbuilt middleware
+     app.use is a method available in express js to use middleware.
+
+    step7.use of template engine
+      -template engine allows us to make a web server dynamic
+      -there are multiple  template engine available like jade,ejs,hbs
+
+      -here we are using hbs template engine
+    
+    step8. create folder structure for template engine
+        templates folder
+         -views folder
+         -partials folder
+    
