@@ -1,0 +1,20 @@
+EXPRESSJS
+
+--express.js is web application framework for Node.js It provide various feature that make web application
+ development fast and easy which otherwise takes more time using only Node.js
+
+--express.js provides an easy way to create web serverand render HTML pagess for different HTTP requests 
+ by configuring routes for our application.
+
+ ADVANTAGE of Express.js
+ 1.makes node.js web application development fast and easy.
+ 2.Easy to configure and customize
+ 3.Allows us to define routes of our application based on HTTP methods and URLs.
+ 4.Easy to integrate with different template engines like Jade , EJS etc 
+
+SERVE STATIC RESOURCES USING EXPRESS.js
+-it is easy to serve static files using built-in middleware in Express.js called express.STATIC
+-The express.static middleware is responsible for serving the static assets of an express.js application
+-The express.static() method specifics the folder from which to serve all static RESOURCES
+-//setting middleware
+-app.use(express.static(--dirname+'public'));
