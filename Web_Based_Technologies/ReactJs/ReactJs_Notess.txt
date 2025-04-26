@@ -1,0 +1,133 @@
+25/04/2025
+
+*React: 
+    -it is use to create rich User Interface.
+    -it is javascript library
+    -it create single page application(SPA)
+    -it works on components
+    -it is developed and maintain by facebook(meta)
+    -latset version of react is 19
+
+*Technology pre-requisit
+-html,css,ajavscript(basic,ES5,ES6,oops)
+
+*Software pre-requisit
+-node js,npm,text-Editor(vs code)
+
+*there are multiple ways to  create react projecct
+
+1.npx(do not required to install configuration file)
+step1: npx create-react-app appName
+step2. cd appName
+step3. npm start
+
+
+2.npm(need to install configuration file)
+step1: npm install -g create-react-app
+step2. create-react-app appName
+step3. npm start
+
+
+3.vite(it will create react project with minimul file)
+npm create vite@latest my-app -- --template react
+
+
+*App.js: it is root component in react app
+
+node_modules: all dependencies and liabrary will install here.
+package.json: all install dependencies and library entry will 
+package-lock.json: details desctription of dependencies will be
+*In react index.html page will display (render)
+
+*component:
+    -it is partial part of react app.
+    -component can be reuse multiple time
+    -it can be any part of react app
+    -In React while creating component its name must start with capital letter
+    
+    *In react there are two types of component 
+    1.function component:
+    -when your main foucs is on UI design in that case we use it.
+    2.class component:
+    -when we need to deal with complex logic and essential data in that case we use it.
+
+
+    JSX(JAVASCRIPT XML):
+    -it makes react code easy and allows us to write html code in react
+    -in jsx we have to use one parent element to wrap another element.
+    -parent element must be block element like div,p,..
+
+    *props (properties)
+    -it allow us to pass data inside component.
+    -it return data in object format
+    -this is function component we can access props by writing props .propsName
+    -this is class component we can access props by writing this.props .propsName
+    it is a parameter or functional parameter which is use to pass data inside component
+
+
+*method and event in react
+
+MethodEventComp.js(cc)     done
+
+***State in class component
+- it is use  to handle essential data in class component
+- it return object type of data.
+- in class component we write state in class constructor.
+- we can access state data outside state by writting this.state.propertyName
+
+- we can use state in function component by using  useState Hook.
+- StateComp.js cc
+
+*setState(): It is use to manipulate state data.
+
+
+*Conditional Rendering: display bcomponent output in browser on that basis of Conditional
+
+1.if else:  if condition is true if block will execute otherwise else block
+2.elemment as variable: in this we store ressult in variable display it conditionally inside elemment
+3.ternary operator: shorthand syntax dfor if else.
+ syntax: (condition) ? truepart: falsepart;
+
+4.short-circuit (&&): if the comndition is true then only it execute code.
+
+ConditionalRenComp.js  cc
+
+
+*Use of CSS in React
+1.internal css:
+2.external css:
+3.module css: -this is use when we have write css property for secific component its filename must  save with filename.module.css
+
+CssComp.js cc
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+26/04/2025
+
+*React/redux snippet for creating component by using shortcut way
+-rfce: create normal function component
+-rafce: it will generate  arrow function component
+
+-rce: it will generate class component.
+-rconst: generate constructor with super method and state.
+ChildComp.js fc(function-component)
+ParentComp.js
+
+*COmponent interaction , how to pass data from one component to another
+*pass state properties as props to child component
+*pass metghod as props to child component
+*destructering of state
+* destructuring  of props
+
+
+*PureComponent: it prevent unnecessary re-rendering of class component by performing shallow comparison.
+
+-to achieve this we have to extend component with PureComponent class.
+
+@MyPureComponent.js
+
+*React.memo(): it is method which prevent unnecessary re-rendering of function component by performing shalow comparison
+- to achieve this we have to pass function component name as an argument to React.memo()method
+
+MemoComp. js fc
