@@ -16,7 +16,8 @@ public class BigOnSqr {
 			 {
 				 break;
 			 }
-			
+
+			 
 		 }
 		 if(j>tar_index)
 		 {
