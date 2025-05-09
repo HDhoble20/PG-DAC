@@ -4,13 +4,8 @@ import java.util.Scanner;
 
 public class Sorting {
 
-	
-	
 	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
-//		int arr[]= {10,11,6,2,13,7,32,9,3,23};
-		
-		
+		Scanner sc =new Scanner(System.in);		
 		do {
 			System.out.println();
 			System.out.println("-------------------------------------------------------------");
@@ -19,12 +14,12 @@ public class Sorting {
 			System.out.println("3 -> INSERTION SORT");
 			System.out.println("4 -> MERGE SORT VERSION 2");
 			System.out.println("5 -> MERGE SORT");
-			System.out.println("6 -> EXIT");
+			System.out.println("6 -> QUICK SORT");
+			System.out.println("7 -> EXIT");
 			System.out.println("-------------------------------------------------------------");
 			System.out.println("ENTER YOUR CHOICE:- ");
 			int ch=sc.nextInt();
 			System.out.println("-------------------------------------------------------------");
-			
 			
 			switch(ch)
 			{
@@ -98,13 +93,33 @@ public class Sorting {
 				}
 				Merge_Sort ms=new Merge_Sort();
 				ms.merge_sort(arr4,0,arr4.length-1);
+				System.out.print("SORTED ARRAY USING MERGE SORT:- ");
 				for(int i=0;i<arr4.length;i++)
 				{
 					System.out.print(arr4[i]+" ");
 				}
 				break;
-						
+					
 			case 6:
+				System.out.println("ENTER THE LENGTH OF ARRAY");
+				int n6=sc.nextInt();
+				int arr6[]=new int[n6];
+//				int res[]=new int[arr4.length];
+				System.out.println("ENTER ARRAY ELEMENTS:- ");
+				for(int i=0;i<n6;i++)
+				{
+					arr6[i]=sc.nextInt();
+				}
+				Quick_Sort qs=new Quick_Sort();
+				qs.QuickSort(arr6, 0, arr6.length-1);
+				System.out.print("SORTED ARRAY USING QUICK SORT:- ");
+				for(int i=0;i<arr6.length;i++)
+				{
+					System.out.print(arr6[i]+" ");
+				}
+				break;
+				
+			case 7:
 				System.out.println("EXITING.........");
 				break;
 				
